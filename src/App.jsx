@@ -20,7 +20,7 @@ import Popup from "./popups/Popups";
 import Licence_Modal from "./components/Licence_Modal/Licence_Modal";
 import Sidebar from "./components/Sidebar/Sidebar";
 
-export const baseUrl = "/ampir_react";
+export const baseUrl = "/ampir";
 
 function App() {
 	// const { resetScroll } = useGlobalContext();
