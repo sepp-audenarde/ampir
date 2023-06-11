@@ -8,6 +8,7 @@
 	justify-content: flex-start;
 	align-items: center;
 	margin-top: 150px;
+	// margin-bottom: 350px;
 
 	.wrapper {
 		display: grid;
@@ -136,16 +137,18 @@
 }
 
 @media (max-width: 1140px) {
-	.section .wrapper {
-		grid-template-columns: 1fr 2fr;
-		// grid-template-rows: 1fr 1fr;
+	.section {
+		.wrapper {
+			grid-template-columns: 1fr 2fr;
+			// grid-template-rows: 1fr 1fr;
 
-		// .left {
-		// 	transform: translateY(300px);
-		// }
-		// .right {
-		// 	transform: translateY(300px);
-		// }
+			// .left {
+			// 	transform: translateY(300px);
+			// }
+			// .right {
+			// 	transform: translateY(300px);
+			// }
+		}
 	}
 }
 
