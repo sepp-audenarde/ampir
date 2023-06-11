@@ -47,7 +47,7 @@ const Navbar = () => {
 					</Link>
 					{/* click */}
 				</div>
-				<div className={styles.link}>{pathname === "/contacts" ? main : contacts}</div>
+				<div className={styles.link}>{pathname === baseUrl + "/contacts" ? main : contacts}</div>
 			</div>
 			<div className={styles.menu} onClick={() => openSidebar()}>
 				<div className={styles.image} src={menuImg}>
