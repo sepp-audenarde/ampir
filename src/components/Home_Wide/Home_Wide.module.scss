@@ -1,0 +1,54 @@
+.section {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	margin-top: 500px;
+
+	.textContainer {
+		position: absolute;
+		top: 42%;
+		z-index: 1;
+		background-color: rgba(0, 0, 0, 0.1);
+		margin: 0px;
+		padding: 0px 30px;
+		border-radius: 50%;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px 40px;
+
+		.text {
+			text-align: center;
+			color: white;
+			font-size: 20px;
+			font-family: Montserrat;
+			font-weight: 200;
+			opacity: 0.95;
+
+			margin: 10px;
+		}
+	}
+
+	.wrapper {
+		max-width: 1920px;
+		width: 100%;
+		height: 375px;
+		overflow: hidden;
+
+		.picture {
+			background-image: url("/images/wide_home.webp");
+			background-size: fill;
+			background-position: right;
+			background-repeat: repeat-x;
+
+			width: fit-content;
+			height: 100%;
+			width: 2500px;
+
+			transition: all 0.5s ease-out;
+
+			transform: translateX(0px);
+		}
+	}
+}

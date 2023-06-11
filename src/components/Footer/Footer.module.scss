@@ -1,0 +1,119 @@
+@use "../../variables.scss" as *;
+
+.section {
+	margin-top: 535px;
+	width: 100%;
+	min-height: 250px;
+	background-color: $primary-color;
+	display: flex;
+	justify-content: center;
+
+	color: white;
+
+	user-select: text;
+
+	.footer {
+		margin-top: 75px;
+		display: grid;
+		grid-template-columns: 3fr 3fr 3fr 3fr;
+		max-width: 1280px;
+		width: 100%;
+		gap: 10px;
+
+		.logo {
+			font-family: Montserrat;
+			font-size: 40px;
+			font-weight: 200;
+			letter-spacing: 12px;
+		}
+
+		.contacts {
+			.sectionLogo {
+				font-size: 32px;
+				font-weight: 600;
+				letter-spacing: 3px;
+			}
+			.subtext {
+				.topContacts {
+					margin-top: 15px;
+					p {
+						letter-spacing: 1.5px;
+						font-size: 12px;
+						color: $footerText-color;
+						padding: 0;
+						margin: 0;
+					}
+				}
+				.bottomContacts {
+					margin-top: 15px;
+					p {
+						letter-spacing: 1.5px;
+						font-size: 12px;
+						color: $footerText-color;
+						padding: 0;
+						margin: 0;
+					}
+				}
+			}
+		}
+		.address {
+			.sectionLogo {
+				font-size: 32px;
+				font-weight: 600;
+				letter-spacing: 3px;
+			}
+			.subtext {
+				margin-top: 15px;
+				p {
+					letter-spacing: 1.5px;
+					font-size: 12px;
+					color: $footerText-color;
+					padding: 0;
+					margin: 0;
+				}
+			}
+		}
+		.social {
+			margin-top: 4px;
+			display: flex;
+			flex-direction: column;
+
+			justify-content: flex-start;
+			align-items: flex-end;
+
+			.oneSocial {
+				color: $footerText-color;
+				margin-bottom: 5px;
+				font-weight: 600;
+			}
+		}
+	}
+
+	a {
+		color: white;
+	}
+}
+
+@media (max-width: 1300px) {
+	.section {
+		margin-top: 350px;
+	}
+}
+
+@media (max-width: 600px) {
+	.section {
+		margin-top: 150px;
+
+		.footer {
+			grid-template-columns: 1fr;
+
+			grid-template-rows: repeat(4, minmax(100px, 150px));
+			gap: 40px;
+
+			padding: 10px;
+		}
+	}
+	.subbuilding {
+		display: none;
+	}
+}

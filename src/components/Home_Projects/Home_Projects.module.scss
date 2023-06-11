@@ -1,0 +1,123 @@
+.section {
+	width: 100%;
+	// height: 2400px;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+
+	margin-top: 300px;
+
+	.titleWrapper {
+		padding-left: 5px;
+		width: 100%;
+		max-width: 1480px;
+
+		.title {
+			text-align: left;
+			font-size: 46px;
+			max-width: 470px;
+		}
+	}
+
+	.wrapper {
+		max-width: 1920px;
+		width: 100%;
+		height: fit-content;
+
+		.container {
+			margin-top: 125px;
+			border-top: 2px solid rgb(231, 231, 231);
+		}
+	}
+	.subtitle {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		margin: 10px 0px;
+		margin-top: 75px;
+		padding: 10px 15px 15px 10px;
+		gap: 5px;
+		justify-content: center;
+
+		.num {
+			font-family: Montserrat;
+			font-weight: 300;
+			margin-top: 4px;
+			font-size: 14px;
+			color: rgb(41, 41, 41);
+		}
+
+		.name {
+			p {
+				margin: 0;
+
+				font-size: 60px;
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+.underline_one {
+	color: #000000; /* Цвет обычной ссылки */
+	position: relative;
+	cursor: pointer;
+	text-decoration: none; /* Убираем подчеркивание */
+}
+.underline_one:after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: -2px;
+	width: 0;
+	height: 2px; /* Высота линии */
+	background-color: black; /* Цвет подчеркивания при исчезании линии*/
+	transition: width 0.7s; /* Время эффекта */
+}
+
+.underline_one:hover:after {
+	content: "";
+	width: 100%;
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	height: 2px; /* Высота линии */
+
+	transition: width 0.7s; /* Время эффекта */
+}
+
+@media (max-width: 600px) {
+	.section {
+		height: fit-content;
+
+		.titleWrapper {
+			.title {
+				font-size: 7vw;
+				width: fit-content;
+			}
+		}
+		.wrapper {
+			.container {
+				margin-top: 10px;
+			}
+		}
+		.subtitle {
+			margin-top: 10px;
+			.name {
+				p {
+					font-size: 10vw;
+				}
+			}
+		}
+	}
+}
+
+// @media (max-width: 1140px) {
+
+// }

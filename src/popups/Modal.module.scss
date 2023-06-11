@@ -1,0 +1,112 @@
+.modalBody {
+	padding-left: 110px;
+	padding-right: 110px;
+	padding-top: 70px;
+
+	padding-bottom: 300px;
+	background-color: white;
+
+	.wrapper {
+		height: 100%;
+		width: 100%;
+
+		.header_wrap {
+			text-align: center;
+			.header_type {
+				font-size: 13px;
+				text-transform: uppercase;
+				font-weight: 700;
+				letter-spacing: 2px;
+				margin-bottom: 15px;
+			}
+			.header_name {
+				font-size: 38px;
+				text-transform: uppercase;
+				font-weight: 200;
+				letter-spacing: 5px;
+				margin-bottom: 90px;
+			}
+		}
+
+		.card_wrap {
+			width: 100%;
+
+			.card_image {
+				img {
+					width: 100%;
+				}
+				margin-bottom: 10px;
+			}
+			.card_title {
+				font-family: Montserrat;
+				text-align: center;
+				font-size: 13px;
+			}
+			margin-bottom: 130px;
+		}
+
+		.text_wrap {
+			.text_text {
+				p {
+					margin-bottom: 30px;
+					font-size: 14px;
+					font-family: Montserrat;
+				}
+			}
+			margin-bottom: 130px;
+		}
+
+		.status_wrap {
+			display: flex;
+			justify-content: flex-end;
+			text-align: end;
+			font-size: 12px;
+
+			.status_text {
+				font-family: Montserrat;
+				font-weight: 700;
+				max-width: 280px;
+				font-size: 13px;
+			}
+		}
+
+		.dubble {
+			display: flex;
+			gap: 50px;
+
+			:first-child {
+				flex: 1;
+			}
+			:last-child {
+				flex: 1;
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.modalBody {
+		padding: 25px;
+		padding-bottom: 100px;
+
+		.wrapper {
+			.header_wrap {
+				.header_name {
+					font-size: 28px;
+					margin-bottom: 30px;
+				}
+			}
+
+			.card_wrap {
+				margin-bottom: 30px;
+			}
+
+			.text_wrap {
+				margin-bottom: 30px;
+			}
+			.status_wrap {
+				margin-top: 100px;
+			}
+		}
+	}
+}
